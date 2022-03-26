@@ -1,0 +1,291 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	height: 100vn;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.full-page
+{
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.nav-bar
+{
+	background-color: #3a4d5f;
+	color: white;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	padding-left: 50px;
+	padding-right: 30px;
+	padding-top: 50px;
+}
+nav
+{
+	flex: 1;
+	text-align: right;
+}
+nav ul
+{
+	display: inline-block;
+	list-style: none;
+}
+nav ul li
+{
+	display: inline-block;
+	margin-right: 70px;
+}
+nav ul li a
+{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-family: sans-serif;
+}
+nav ul li button
+{
+	font-size: 20px;
+	color: white;
+	outline: none;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	font-family: sans-serif;
+}
+nav ul li button:hover
+{
+	color: aqua;
+}
+nav ul li a:hover
+{
+	color: aqua;
+}
+a
+{
+	text-decoration: none;
+	color: palevioletred;
+	font-size: 28px;
+}
+#login-form
+{
+	display: none;
+	margin-top: -600px;
+}
+.form-box
+{
+	width: 380px;
+	height: 480px;
+	position: relative;
+	margin: 2% auto;
+	background-size: rgba(0,0,0,0.3);
+	padding: 10px;
+	margin-top: -10px;
+	overflow: hidden;
+}
+.button-box
+{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #ff6124;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+.input-group-signin
+{
+	top: 5px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+.input-field
+{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	background-color: black;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+span
+{
+	color: #777;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;
+}
+#login
+{
+	left: 50px;
+}
+#login input
+{
+	color: white;
+	font-size: 15;
+}
+#signin
+{
+	left: 450px;
+}
+#signin input
+{
+	color: white;
+	font-size: 15;
+}
+h2
+{
+	text-align: center;
+	color: lightgreen;
+}
+#form1
+{
+	height: 50px;
+	margin-top: 50px;
+	padding-top: 50px;
+}
+.slider {
+
+	width: 1000px;
+	height: 500px;
+	border-radius: 10px;
+	margin-left: 15%;
+	margin-top: 2%;
+	overflow: hidden;
+}
+.slides {
+	width: 500%;
+	height: 500px;
+	display: flex;
+}
+.slides input {
+	display: none;
+}
+.slide {
+	width: 20%;
+	transition: 2s;
+}
+.slide img{
+	width: 800px;
+	height: 500px;
+}
+.navigation-manual{
+	position: absolute;
+	width: 800px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn{
+	border: 2px solid #40D3DC;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+	margin-right: 40px;
+}
+.manual-btn:hover{
+	background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+#radio2:checked ~ .first{
+	margin-left: -20%;
+}
+#radio3:checked ~ .first{
+	margin-left: -40%;
+}
+#radio4:checked ~ .first{
+	margin-left: -60%;
+}
+
+.navigation-auto{
+	position: absolute;
+	display: flex;
+	width: 800px;
+	justify-content: center;
+	margin-top: 460px;
+}
+.navigation-auto div{
+	border: 2px solid #40D3DC;
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+	margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background: #40D3DC;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background: #40D3DC;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background: #40D3DC;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+	background: #40D3DC;
+}
+.select{
+	background-color: red;
+	padding-top: 20%;
+}
